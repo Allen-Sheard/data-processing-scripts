@@ -56,12 +56,12 @@ def convert_annotation(xml_files_path, save_txt_files_path, classes):
 if __name__ == "__main__":
     # 把voc的xml标签文件转化为yolo的txt标签文件
     # 1、需要转化的类别
-    with open('E:/datasets/dianli17/txt/classes.txt', 'r') as f:
+    with open('./datasets/dianli17/txt/classes.txt', 'r') as f:
         classes = f.read().strip().split()
     # 2、voc格式的xml标签文件路径
-    xml_files = r'E:\datasets\dianli17\sly_bjbmyw_lasw\xml'
+    xml_files = r'.\datasets\dianli17\sly_bjbmyw_lasw\xml'
     # 3、转化为yolo格式的txt标签文件存储路径
-    save_txt_files = r'E:\datasets\dianli17\sly_bjbmyw_nr\txt'
+    save_txt_files = r'.\datasets\dianli17\sly_bjbmyw_nr\txt'
     os.makedirs(save_txt_files,exist_ok=True)
     convert_annotation(xml_files, save_txt_files, classes)
 
