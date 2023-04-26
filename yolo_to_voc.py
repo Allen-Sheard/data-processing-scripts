@@ -188,7 +188,7 @@ class YOLO2VOCConvert:
                 f.close()
 
 if __name__ == '__main__':
-    # 把yolo的txt标签文件转化为voc格式的xml标签文件
+    # 把yolo的txt标签文件转化为voc格式的xml标签文件  
     # yolo格式txt标签文件相对路径
     txts_path1 = './test_txt'
     # 转化为voc格式xml标签文件存储的相对路径
