@@ -1,4 +1,4 @@
-"""截取视频片段保存"""
+"""随机截取视频片段保存"""
 
 import cv2
 import random
